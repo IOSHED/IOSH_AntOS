@@ -5,7 +5,12 @@
    ```command_line
    rustup target add thumbv7em-none-eabihf
    ```
-2) Сборка проекта.
+2) Установить исходный код `rust` для нашего `core`.
    ```command_line
-   cargo build --target thumbv7em-none-eabihf
+   rustup component add rust-src
    ```
+3) Сборка проекта.
+   ```command_line
+   cargo build
+   ```
+   

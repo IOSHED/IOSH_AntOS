@@ -3,12 +3,3 @@ name = "ant_os"
 version = "0.1.0"
 edition = "2021"
 
-[profile.dev]
-# Позволяет прерывать вылнение комманды при 'panic' без постабработки,
-# что достигается отключением 'eh_personality'.
-panic = "abort"
-
-[profile.release]
-# Позволяет прерывать вылнение комманды при 'panic' без постабработки,
-# что достигается отключением 'eh_personality'.
-panic = "abort"

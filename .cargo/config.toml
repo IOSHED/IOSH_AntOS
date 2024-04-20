@@ -1,0 +1,11 @@
+
+[unstable]
+# Позволяет перекомпилировать core и другие стандартные библиотеки по требованию, вместо того,
+# чтобы использовать предварительно скомпилированные версии, поставляемые вместе с установкой Rust.
+build-std = ["core", "compiler_builtins"]
+# Содержит функции для работы с памятью.
+build-std-features = ["compiler-builtins-mem"]
+
+[build]
+# Указатель на спецификацию.
+target = "configuration/specification/x86_64-AntOS.json"
