@@ -9,8 +9,17 @@
    ```command_line
    rustup component add rust-src
    ```
-3) Сборка проекта.
+3) Установить загрузчик образа на диск.
    ```command_line
-   cargo build
+   cargo install bootimage
+   rustup component add llvm-tools-preview
    ```
+4) Сборка проекта.
+   ```command_line
+   cargo bootimage
+   ```
+5) Запуск виртуальной машины QEMU.
+   ```command_line
+   qemu-system-x86_64 -drive format=raw,file=target/x86_64-AntOS/debug/bootimage-ant_os.bin  
+   ``` 
    
