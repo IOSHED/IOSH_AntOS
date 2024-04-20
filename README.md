@@ -18,8 +18,8 @@
    ```command_line
    cargo bootimage
    ```
-5) Запуск виртуальной машины QEMU.
+5) Запуск виртуальной машины `QEMU`.
    ```command_line
-   qemu-system-x86_64 -drive format=raw,file=target/x86_64-AntOS/debug/bootimage-ant_os.bin  
+   cargo run
    ``` 
    

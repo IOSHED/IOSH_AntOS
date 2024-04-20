@@ -9,3 +9,7 @@ build-std-features = ["compiler-builtins-mem"]
 [build]
 # Указатель на спецификацию.
 target = "configuration/specification/x86_64-AntOS.json"
+
+[target.'cfg(target_os = "none")']
+# Упрощаем запуск QEMU
+runner = "bootimage runner"
